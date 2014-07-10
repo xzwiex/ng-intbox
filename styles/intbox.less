@@ -1,0 +1,42 @@
+.intbox-wrapper {
+  position:relative;
+  clear:both;
+  display: inline-block;
+  margin-top:4px;
+
+  input {
+
+  }
+  .intbox-button {
+    position: absolute;
+    width:10px;
+    height:50%;
+
+    right:2px;
+    top:0;
+    cursor:pointer;
+
+    &:before {
+      content:"▲";
+      color:#ccc;
+      position: absolute;
+      height:9px;
+      line-height:9px;
+      font-size:9px;
+      width:9px;
+      left:50%;
+      top:50%;
+      margin: -4px 0 0 -4px;
+    }
+
+    &.intbox-less {
+      top:auto;
+      bottom:0;
+
+      &:before {
+        content:"▼";
+      }
+    }
+  }
+
+}
